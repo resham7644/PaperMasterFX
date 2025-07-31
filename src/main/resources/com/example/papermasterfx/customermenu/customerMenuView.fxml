@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="294.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papermasterfx.customermenu.CustomerMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b8cde1" height="56.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="551.0" />
+      <Label layoutX="167.0" layoutY="14.0" text="Customer Manager">
+         <font>
+            <Font name="Segoe UI Symbol" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="81.0" text="Choose action below">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadcdd" height="109.0" layoutX="98.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="139.0" />
+      <Label fx:id="txtUse" layoutX="105.0" layoutY="148.0" text="Add/Edit Customer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="134.0" layoutY="182.0" mnemonicParsing="false" onAction="#doOpenCustomers" text="Click Here" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadcdd" height="109.0" layoutX="302.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="139.0" />
+      <Label layoutX="319.0" layoutY="148.0" text="Customer Board">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="182.0" mnemonicParsing="false" onAction="#doOpenCusBoard" text="Click Here" />
+   </children>
+</AnchorPane>

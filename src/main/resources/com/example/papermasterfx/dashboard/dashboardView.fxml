@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papermasterfx.dashboard.DashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3f8fc" height="66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="876.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cedfee" height="606.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="237.0" />
+      <Label layoutX="248.0" layoutY="15.0" prefHeight="50.0" prefWidth="612.0" text="Newspaper Management Dashboard">
+         <font>
+            <Font name="Segoe UI Symbol" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="70.0" prefHeight="27.0" prefWidth="134.0" text="Welcome Admin">
+         <font>
+            <Font name="Segoe UI Symbol" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="43.0" layoutX="97.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2f32" height="77.0" layoutX="280.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <Label fx:id="lblTotalCus" layoutX="295.0" layoutY="147.0" prefHeight="50.0" prefWidth="63.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="114.0" prefHeight="50.0" prefWidth="152.0" text="Total Customers" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2f32" height="77.0" layoutX="475.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <Label fx:id="lblPendingPay" layoutX="483.0" layoutY="147.0" prefHeight="50.0" prefWidth="63.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="114.0" prefHeight="50.0" prefWidth="177.0" text="Pending Payments" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2f32" height="77.0" layoutX="673.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <Label fx:id="TotalPayment" layoutX="681.0" layoutY="147.0" prefHeight="50.0" prefWidth="146.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="679.0" layoutY="114.0" prefHeight="50.0" prefWidth="152.0" text="Total Collection" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff0f2" height="474.0" layoutX="15.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cedfee" height="50.0" layoutX="59.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+         <Label layoutX="58.0" layoutY="189.0" onMouseClicked="#doOpenPaperMenu" prefHeight="50.0" prefWidth="119.0" text="     Papers">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cedfee" height="50.0" layoutX="59.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Label layoutX="60.0" layoutY="275.0" onMouseClicked="#doOpenHawkers" prefHeight="50.0" prefWidth="119.0" text="   Hawkers">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cedfee" height="50.0" layoutX="59.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Label layoutX="58.0" layoutY="357.0" onMouseClicked="#doOpenCusMenu" prefHeight="50.0" prefWidth="119.0" text=" Customers">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cedfee" height="50.0" layoutX="59.0" layoutY="443.0" stroke="BLACK" strokeType="INSIDE" width="119.0" />
+      <Label layoutX="58.0" layoutY="443.0" onMouseClicked="#doOpenBillMenu" prefHeight="50.0" prefWidth="119.0" text="        Bill">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="122.0" prefHeight="50.0" prefWidth="134.0" text="Manage">
+         <font>
+            <Font name="Segoe UI Symbol" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="551.0" prefHeight="27.0" prefWidth="146.0" text="About Developer.." textFill="#1b65e4">
+         <font>
+            <Font name="Segoe UI Symbol" size="18.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="298.0" layoutY="275.0" prefHeight="290.0" prefWidth="542.0" />
+      <Label layoutX="264.0" layoutY="229.0" prefHeight="50.0" prefWidth="134.0" text="Analytics">
+         <font>
+            <Font name="Segoe UI Symbol" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="69.0" prefHeight="50.0" prefWidth="177.0" text="Recent Updates">
+         <font>
+            <Font name="Segoe UI Symbol" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
